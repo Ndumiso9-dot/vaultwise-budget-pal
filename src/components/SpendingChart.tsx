@@ -60,10 +60,10 @@ const SpendingChart = () => {
           <Line 
             type="monotone" 
             dataKey="amount" 
-            stroke="#10b981" 
+            stroke="#475569" 
             strokeWidth={3}
-            dot={{ fill: '#10b981', strokeWidth: 2, r: 4 }}
-            activeDot={{ r: 6, stroke: '#10b981', strokeWidth: 2 }}
+            dot={{ fill: '#475569', strokeWidth: 2, r: 4 }}
+            activeDot={{ r: 6, stroke: '#475569', strokeWidth: 2 }}
           />
         </LineChart>
       </ResponsiveContainer>

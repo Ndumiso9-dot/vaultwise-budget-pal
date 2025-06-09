@@ -36,7 +36,7 @@ const BudgetGoals = ({ onClose }: BudgetGoalsProps) => {
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="flex items-center">
-            <Target className="w-5 h-5 mr-2 text-emerald-600" />
+            <Target className="w-5 h-5 mr-2 text-slate-600" />
             Set Monthly Budget Goal
           </DialogTitle>
         </DialogHeader>
@@ -72,7 +72,7 @@ const BudgetGoals = ({ onClose }: BudgetGoalsProps) => {
             <Button type="button" variant="outline" onClick={onClose}>
               Cancel
             </Button>
-            <Button type="submit" className="bg-emerald-600 hover:bg-emerald-700">
+            <Button type="submit" className="bg-slate-700 hover:bg-slate-800">
               Set Budget
             </Button>
           </div>

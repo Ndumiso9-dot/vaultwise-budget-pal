@@ -36,16 +36,16 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-slate-700 to-slate-800 rounded-lg flex items-center justify-center">
                 <Wallet className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-slate-900">Vaultwise</h1>
-                <p className="text-sm text-slate-600">Smart Budget Tracking</p>
+                <h1 className="text-2xl font-bold text-slate-900">Bankroll</h1>
+                <p className="text-sm text-slate-600">Professional Budget Management</p>
               </div>
             </div>
             <div className="flex items-center space-x-2">
-              <Badge variant="outline" className="bg-emerald-50 text-emerald-700 border-emerald-200">
+              <Badge variant="outline" className="bg-slate-50 text-slate-700 border-slate-200">
                 Level {userLevel}
               </Badge>
               <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
@@ -59,7 +59,7 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Quick Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          <Card className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white border-0">
+          <Card className="bg-gradient-to-r from-slate-600 to-slate-700 text-white border-0">
             <CardHeader className="pb-2">
               <CardTitle className="text-lg font-medium opacity-90">Total Spent</CardTitle>
             </CardHeader>
@@ -69,7 +69,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0">
+          <Card className="bg-gradient-to-r from-blue-600 to-blue-700 text-white border-0">
             <CardHeader className="pb-2">
               <CardTitle className="text-lg font-medium opacity-90">Budget Used</CardTitle>
             </CardHeader>
@@ -79,7 +79,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-r from-purple-500 to-purple-600 text-white border-0">
+          <Card className="bg-gradient-to-r from-indigo-600 to-indigo-700 text-white border-0">
             <CardHeader className="pb-2">
               <CardTitle className="text-lg font-medium opacity-90">Expenses</CardTitle>
             </CardHeader>
@@ -94,7 +94,7 @@ const Index = () => {
         <div className="flex flex-wrap gap-4 mb-8">
           <Button 
             onClick={() => setShowExpenseForm(true)}
-            className="bg-emerald-600 hover:bg-emerald-700 text-white"
+            className="bg-slate-700 hover:bg-slate-800 text-white"
           >
             <PlusCircle className="w-4 h-4 mr-2" />
             Add Expense
@@ -102,7 +102,7 @@ const Index = () => {
           <Button 
             onClick={() => setShowBudgetGoals(true)}
             variant="outline"
-            className="border-emerald-200 text-emerald-700 hover:bg-emerald-50"
+            className="border-slate-300 text-slate-700 hover:bg-slate-50"
           >
             <Target className="w-4 h-4 mr-2" />
             Set Budget Goals
@@ -114,7 +114,7 @@ const Index = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center">
-                <TrendingUp className="w-5 h-5 mr-2 text-emerald-600" />
+                <TrendingUp className="w-5 h-5 mr-2 text-slate-600" />
                 Spending Over Time
               </CardTitle>
             </CardHeader>
@@ -140,7 +140,7 @@ const Index = () => {
         <Card className="mb-8">
           <CardHeader>
             <CardTitle className="flex items-center">
-              <Award className="w-5 h-5 mr-2 text-purple-600" />
+              <Award className="w-5 h-5 mr-2 text-indigo-600" />
               Achievements & Rewards
             </CardTitle>
           </CardHeader>

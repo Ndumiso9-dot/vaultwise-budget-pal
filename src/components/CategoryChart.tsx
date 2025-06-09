@@ -3,14 +3,14 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recha
 import { useExpenseStore } from '@/store/expenseStore';
 
 const COLORS = [
-  '#10b981', // emerald
-  '#3b82f6', // blue
-  '#8b5cf6', // purple
-  '#f59e0b', // amber
-  '#ef4444', // red
-  '#06b6d4', // cyan
-  '#84cc16', // lime
-  '#ec4899', // pink
+  '#475569', // slate
+  '#1e40af', // blue
+  '#4338ca', // indigo
+  '#7c3aed', // violet
+  '#dc2626', // red
+  '#ea580c', // orange
+  '#65a30d', // lime
+  '#0891b2', // cyan
 ];
 
 const CategoryChart = () => {

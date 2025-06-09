@@ -13,18 +13,18 @@ const RewardsPanel = () => {
   return (
     <div className="space-y-4">
       {/* Level and Progress */}
-      <div className="flex items-center justify-between p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border border-purple-100">
+      <div className="flex items-center justify-between p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg border border-slate-200">
         <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+          <div className="w-12 h-12 bg-gradient-to-r from-slate-600 to-blue-600 rounded-full flex items-center justify-center">
             <Trophy className="w-6 h-6 text-white" />
           </div>
           <div>
             <h3 className="font-bold text-lg text-slate-900">Level {userLevel}</h3>
-            <p className="text-sm text-slate-600">Budget Tracker</p>
+            <p className="text-sm text-slate-600">Budget Manager</p>
           </div>
         </div>
         <div className="text-right">
-          <Badge variant="outline" className="bg-purple-100 text-purple-700 border-purple-200">
+          <Badge variant="outline" className="bg-slate-100 text-slate-700 border-slate-200">
             {earnedAchievements.length}/{totalAchievements} Badges
           </Badge>
         </div>
@@ -37,7 +37,7 @@ const RewardsPanel = () => {
             key={achievement.id} 
             className={`transition-all duration-200 ${
               achievement.earned 
-                ? 'bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-200 shadow-sm' 
+                ? 'bg-gradient-to-br from-slate-50 to-slate-100 border-slate-200 shadow-sm' 
                 : 'bg-slate-50 border-slate-200 opacity-60'
             }`}
           >
@@ -59,8 +59,8 @@ const RewardsPanel = () => {
                   </p>
                   {achievement.earned && achievement.earnedDate && (
                     <div className="flex items-center mt-2">
-                      <Star className="w-3 h-3 text-emerald-500 mr-1" />
-                      <span className="text-xs text-emerald-600">
+                      <Star className="w-3 h-3 text-slate-500 mr-1" />
+                      <span className="text-xs text-slate-600">
                         Earned {new Date(achievement.earnedDate).toLocaleDateString()}
                       </span>
                     </div>
