@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,6 +8,7 @@ import BudgetGoals from "@/components/BudgetGoals";
 import SpendingChart from "@/components/SpendingChart";
 import CategoryChart from "@/components/CategoryChart";
 import RewardsPanel from "@/components/RewardsPanel";
+import MonthlyPerformance from "@/components/MonthlyPerformance";
 import { useExpenseStore } from "@/store/expenseStore";
 import { toast } from "sonner";
 
@@ -65,7 +65,7 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <p className="text-3xl font-bold">${totalSpent.toFixed(2)}</p>
-              <p className="text-sm opacity-75 mt-1">This month</p>
+              <p className="text-sm text-slate-600">This month</p>
             </CardContent>
           </Card>
 
@@ -134,6 +134,11 @@ const Index = () => {
               <CategoryChart />
             </CardContent>
           </Card>
+        </div>
+
+        {/* Monthly Performance */}
+        <div className="mb-8">
+          <MonthlyPerformance />
         </div>
 
         {/* Rewards and Achievements */}
